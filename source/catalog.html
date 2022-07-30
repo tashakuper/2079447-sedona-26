@@ -7,72 +7,109 @@
 </head>
 
 <body>
-  <div class="page-container">
-    <header class="main-header">
-      <nav class="navigation">
-        <button class="navigation-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Фото и видео</a>
-          </li>
+  <header class="page-header">
 
-          <a class="main-header_logo">
-            <img src="#" width="185" height="96" alt="Логотип города Седона.">
-          </a>
+    <nav class="main-navigation">
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Форма отзыва</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">HTML academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-container">
-      <section class="promo">
-        <h1 class="visually-hidden">Туристический город "Седона"</h1>
-        <img class="promo-image" src="#" width="1200" height="301" alt="Седона">
-      </section>
+      <ul class="main-navigation-list">
+        <li class="main-navigation-item">
+          <a class="main-navigation-link">Главная</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">Фото и видео</a>
+        </li>
 
-    </main>
-    <section class="catalog">
-      <h2 class="title-section catalog-title">Фото и видео</h2>
-      <p>Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экономике.</p>
-      <ul class="catalog-container list-reset">
-        <li class="catalog-item catalog-item-road">
-          <h3>Неродные просторы</h3>
-          <p class="catalog-item-author">Автор фото: Борис</p>
-          <a class="button button-like" href="#"></a>
+        <div class="page-header_logo">
+          <img src="#" width="101" height="83" alt="Логотип города Седона.">
+        </div>
+
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="form.html">Форма отзыва</a>
         </li>
-        <li class="catalog-item catalog-item-plants">
-          <h3>Местная растительность</h3>
-          <p class="catalog-item-author">Автор фото: Сергей</p>
-          <a class="button button-like" href="#"></a>
-        </li>
-        <li class="catalog-item catalog-item-north">
-          <h3>Дорога на север</h3>
-          <p class="catalog-item-author">Автор фото: Петр</p>
-          <a class="button button-like" href="#"></a>
-        </li>
-        <li class="catalog-item catalog-item-devil-bridge">
-          <h3>Мост дьявола</h3>
-          <p class="catalog-item-author">Автор фото: Антон</p>
-          <a class="button button-like" href="#"></a>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">HTML academy</a>
         </li>
       </ul>
-    </section>
-    <section class="reservation">
-      <h2 class="reservation-section catalog-title">Все еще сомневаетесь?</h2>
-      <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img src="#" width="445" height="113">
-    </section>
-  </div>
+      <div class="page-header_menu-bar">
+        <button class="page-header__toggle-open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main-container">
+
+    <div class="promo">
+      <div class="promo-container">
+        <h1 class="visually-hidden">Туристический город "Седона"</h1>
+        <img class="promo_text-image" src="#" width="187" height="70"
+          alt="Добро пожаловать в великолепную Седону, она лучше, чем Гранд-каньон!"> /*что-то не получается измерить
+        только текст, без Sedona */
+      </div>
+    </div>
+  </main>
+
+  <section class="catalog">
+    <h2 class="title-section catalog-title">Фото и видео</h2>
+    <p>Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экономике.</p>
+    <ul class="catalog-container list-reset">
+      <li class="catalog-item catalog-item-road">
+        <h3>Неродные просторы</h3>
+        <p class="catalog-item-author">Автор фото: Борис</p>
+        <a class="button button-like" href="#"></a>
+      </li>
+      <li class="catalog-item catalog-item-plants">
+        <h3>Местная растительность</h3>
+        <p class="catalog-item-author">Автор фото: Сергей</p>
+        <a class="button button-like" href="#"></a>
+      </li>
+      <li class="catalog-item catalog-item-north">
+        <h3>Дорога на север</h3>
+        <p class="catalog-item-author">Автор фото: Петр</p>
+        <a class="button button-like" href="#"></a>
+      </li>
+      <li class="catalog-item catalog-item-devil-bridge">
+        <h3>Мост дьявола</h3>
+        <p class="catalog-item-author">Автор фото: Антон</p>
+        <a class="button button-like" href="#"></a>
+      </li>
+    </ul>
+  </section>
+  <section class="reservation">
+    <h2 class="reservation-section catalog-title">Все еще сомневаетесь?</h2>
+    <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    <img src="#" width="445" height="113">
+  </section>
+  <footer class="footer">
+    <a href="#" class="footer_hashtag">#visitsedona</a>
+
+    <ul class="social list-reset">
+      <li class="social-item">
+        <a class="social-link" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в Контакте</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в Телеграмм</span>
+        </a>
+      </li>
+
+      <li class="social-item">
+        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы на YouTube</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="copyright-item">
+      <a class="copyright-link" href="#">Разработано</a>
+    </div>
+
+  </footer>
 </body>
 
 </html>
