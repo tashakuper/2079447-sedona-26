@@ -13,7 +13,7 @@
 
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
-          <a class="main-navigation-link">Главная</a>
+          <a class="main-navigation-link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation-item">
           <a class="main-navigation-link" href="#">Фото и видео</a>
@@ -42,47 +42,83 @@
 
   <main class="main-container">
 
-    <div class="promo">
-      <div class="promo-container">
+    <div class="catalog-promo">
+      <div class="catalog-promo-container">
         <h1 class="visually-hidden">Туристический город "Седона"</h1>
-        <img class="promo_text-image" src="#" width="187" height="70"
-          alt="Добро пожаловать в великолепную Седону, она лучше, чем Гранд-каньон!"> /*что-то не получается измерить
-        только текст, без Sedona */
+        <img class="catalog-promo_text-image" src="#" width="460" height="80" alt="Седона.">
       </div>
     </div>
   </main>
 
-  <section class="catalog">
-    <h2 class="title-section catalog-title">Фото и видео</h2>
-    <p>Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экономике.</p>
-    <ul class="catalog-container list-reset">
-      <li class="catalog-item catalog-item-road">
-        <h3>Неродные просторы</h3>
-        <p class="catalog-item-author">Автор фото: Борис</p>
+  <section class="photo-catalog">
+    <h2 class="photo-catalog catalog_title">Фото и видео</h2>
+    <p class="photo-catalog catalog_description">Не можете решиться на путешествие из-за курса?Фотографии помогут вам
+      забыть о политике и экономике.</p>
+
+    <div class="photo-catalog-image_wrapper">
+      <a class="photo-catalog-image_link" href="#"></a>
+    </div>
+    <div class="catalog-image">
+      <img src="#" alt="Седона">
+    </div>
+
+    <ul class="photo-catalog-container list-reset">
+      <li class="photo-catalog-item photo-catalog-item-road">
+        <h3 class="photo-catalog_title">Неродные просторы</h3>
+        <p class="photo-catalog-item-author">Автор фото: Борис</p>
         <a class="button button-like" href="#"></a>
       </li>
-      <li class="catalog-item catalog-item-plants">
-        <h3>Местная растительность</h3>
-        <p class="catalog-item-author">Автор фото: Сергей</p>
+      <div class="photo-catalog_likes">
+        <button class="likes_like-button" type="submit">
+        </button>
+        <span class="likes_count">1350</span>
+      </div>
+
+      <li class="photo-catalog-item catalog-item-plants">
+        <h3 class="photo-catalog_title">Местная растительность</h3>
+        <p class="photo-catalog-item-author">Автор фото: Сергей</p>
         <a class="button button-like" href="#"></a>
       </li>
-      <li class="catalog-item catalog-item-north">
-        <h3>Дорога на север</h3>
-        <p class="catalog-item-author">Автор фото: Петр</p>
+      <div class="photo-catalog_likes">
+        <button class="likes_like-button" type="submit">
+        </button>
+        <span class="likes_count">143</span>
+      </div>
+      <li class="photo-catalog-item catalog-item-north">
+        <h3 class="photo-catalog_title">Дорога на север</h3>
+        <p class="photo-catalog-item-author">Автор фото: Петр</p>
         <a class="button button-like" href="#"></a>
       </li>
-      <li class="catalog-item catalog-item-devil-bridge">
-        <h3>Мост дьявола</h3>
-        <p class="catalog-item-author">Автор фото: Антон</p>
+      <div class="photo-catalog_likes">
+        <button class="likes_like-button" type="submit">
+        </button>
+        <span class="likes_count">96</span>
+      </div>
+      <li class="photo-catalog-item catalog-item-devil-bridge">
+        <h3 class="photo-catalog_title">Мост дьявола</h3>
+        <p class="photo-catalog-item-author">Автор фото: Антон</p>
         <a class="button button-like" href="#"></a>
       </li>
+      <div class="photo-catalog_likes">
+        <button class="likes_like-button" type="submit">
+        </button>
+        <span class="likes_count">254</span>
+      </div>
     </ul>
   </section>
-  <section class="reservation">
-    <h2 class="reservation-section catalog-title">Все еще сомневаетесь?</h2>
-    <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    <img src="#" width="445" height="113">
+
+  <section class="video">
+    <h2 class="video_title">Все еще сомневаетесь?</h2>
+    <p class="video_description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+    </p>
   </section>
+
+  <div class="video-clip">
+    <div class="video-image">
+      <img src="#" alt="Video Sedona">
+    </div>
+  </div>
+
   <footer class="footer">
     <a href="#" class="footer_hashtag">#visitsedona</a>
 
