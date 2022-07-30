@@ -5,15 +5,104 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
+
 <body>
-  <header class="main-header">
-    <section class="promo">
-      <h1 class="visually-hidden">Туристический город "Седона"</h1>
-      <img class="promo-image" src="#" width="1200" height="518" alt="Седона">
-    </section>
+  <header class="page-header">
+
+    <nav class="main-navigation">
+
+      <ul class="main-navigation-list">
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="catalog.html">Фото и видео</a>
+        </li>
+
+        <div class="page-header_logo">
+          <img src="#" width="101" height="83" alt="Логотип города Седона.">
+        </div>
+
+        <li class="main-navigation-item">
+          <a class="main-navigation-link">Форма отзыва</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">HTML academy</a>
+        </li>
+      </ul>
+      <div class="page-header_menu-bar">
+        <button class="page-header__toggle-open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+      </div>
+    </nav>
+
   </header>
+
   <main class="main-container">
-    
+
+    <div class="catalog-promo">
+      <div class="catalog-promo-container">
+        <h1 class="visually-hidden">Туристический город "Седона"</h1>
+        <img class="catalog-promo_text-image" src="#" width="460" height="80" alt="Седона.">
+      </div>
+    </div>
   </main>
+
+  <section class="feedback">
+    <header class="feedback-header">
+      <h1 class="feedback-header__title">Оставьте свой отзыв</h1>
+      <p class="feedback-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+        посещенных вами достопримечательностях.</p>
+    </header>
+
+    <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__container form__container--fullname">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--fullname">Представьтесь:</legend>
+          <p class="form__group form__group--fullname">
+            <label class="form__label" for="first-name">Имя*:</label>
+            <input class="form__input" type="text" name="first-name" placeholder="Имя" value="Пётр" required> </p>
+
+          <p class="form__group form__group--fullname">
+            <label class="form__label" for="last-name">Фамилия*:</label>
+            <input class="form__input" type="text" name="surname" placeholder="Фамилия" value="Пустота" required> </p>
+
+          <p class="form__group form__group--fullname">
+            <label class="form__label" for="middle-name">Отчество:</label>
+            <input class="form__input" type="text" name="second-name" placeholder="Отчество" value="Викторович"> </p>
+        </fieldset>
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+    <a href="#" class="footer_hashtag">#visitsedona</a>
+
+    <ul class="social list-reset">
+      <li class="social-item">
+        <a class="social-link" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в Контакте</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в Телеграмм</span>
+        </a>
+      </li>
+
+      <li class="social-item">
+        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы на YouTube</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="copyright-item">
+      <a class="copyright-link" href="#">Разработано</a>
+    </div>
+
+  </footer>
 </body>
+
 </html>
