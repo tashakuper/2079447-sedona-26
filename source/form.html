@@ -76,6 +76,93 @@
       </div>
     </form>
   </section>
+
+  <div class="form__container form__container--contacts-info">
+
+    <fieldset class="form__fieldset form__fieldset--contacts-info">
+      <legend class="form__legend form__legend--contacts-info">Контактная информация:</legend>
+      <div class="form__group-wrapper">
+
+        <div class="form__group form__group--contacts form__group--phone">
+          <label class="form__label form__label--facts" for="telephone">
+            <span class="form__label--tel">Контактный телефон*:</span>
+          </label>
+
+          <div class="form__input-icon-group">
+            <input class="form__input form__input--contact-info" type="tel" id="telephone" name="telephone"
+              placeholder="Введите телефон">
+            <span class="form__icon form__icon--telephone"></span>
+          </div>
+        </div>
+
+
+        <div class="form__group form__group--contacts form__group--email">
+          <label class="form__label form__label--facts" for="email">Электронная почта*:
+          </label>
+
+          <div class="form__input-icon-group">
+            <input class="form__input form__input--contact-info" id="email" type="email" name="email"
+              placeholder="Введите e-mail">
+            <span class="form__icon form__icon--email"></span>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <fieldset class="form-filter-group">
+    <legend class="form-filter-title">Ваше общее впечатление:</legend>
+
+    <ul class="form-filter-impression-list list-reset">
+
+      <li class="form-filter-impression-item">
+        <input class="form-filter-impression-input visually-hidden" type="radio" name="form-filter-impression-good"
+          value="Скорее положительное" id="form-filter-impression-good">
+        <label class="form-filter-label form-filter-label-radio" for="form-filter-impression-good">Скорее
+          положительное</label>
+      </li>
+
+      <li class="form-filter-impression-item">
+        <input class="form-filter-impression-input visually-hidden" type="radio" name="form-filter-impression-bad"
+          value="Скорее отрицательное" id="form-filter-impression-bad">
+        <label class="form-filter-label form-filter-label-radio" for="form-filter-impression-bad">Скорее
+          отрицательное</label>
+      </li>
+
+      <li class="form-filter-impression-item">
+        <input class="form-filter-impression-input visually-hidden" type="radio" name="form-filter-impression-difficult"
+          value="Затрудняюсь ответить" id="form-filter-impression-difficult">
+        <label class="form-filter-label form-filter-label-radio" for="form-filter-impression-difficult">Затрудняюсь
+          ответить</label>
+      </li>
+    </ul>
+
+  </fieldset>
+  <fieldset class="form-filter-group">
+    <legend class="form-filter-title">Посещенные достопримечательности:</legend>
+
+    <ul class="form-filter-sight-list list-reset">
+      <li class="form-filter-sight-item">
+        <input class="form-filter-sight-input visually-hidden" type="checkbox" name="form-filter-sight-bridge"
+          id="form-filter-sight-bridge" checked>
+        <label class="form-filter-label form-filter-label-check" for="form-filter-sight-bridge">Мост Дьявола</label>
+      </li>
+      <li class="form-filter-sight-item">
+        <input class="form-filter-sight-input visually-hidden" type="checkbox" name="form-filter-sight-mountain"
+          id="form-filter-sight-mountain" checked>
+        <label class="form-filter-label form-filter-label-check" for="form-filter-sight-mountain">Гора-Колокол</label>
+      </li>
+      <li class="form-filter-sight-item">
+        <input class="form-filter-sight-input visually-hidden" type="checkbox" name="form-filter-sight-park"
+          id="form-filter-sight-park" checked>
+        <label class="form-filter-label form-filter-label-check" for="form-filter-sight-park">Слайд-парк</label>
+      </li>
+      <li class="form-filter-sight-item">
+        <input class="form-filter-sight-input visually-hidden" type="checkbox" name="form-filter-sight-rocks"
+          id="form-filter-sight-rocks">
+        <label class="form-filter-label form-filter-label-check" for="form-filter-sight-rocks">Красные скалы</label>
+      </li>
+    </ul>
+  </fieldset>
   <footer class="footer">
     <a href="#" class="footer_hashtag">#visitsedona</a>
 
