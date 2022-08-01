@@ -11,99 +11,132 @@
 
     <nav class="main-navigation">
 
-      <ul class="main-navigation-list">
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Фото и видео</a>
-        </li>
+      <a class="page-header_logo" href="index.html"></a>
+      <img src="#" width="101" height="83" alt="Логотип города Седона.">
 
-        <div class="page-header_logo">
-          <img src="#" width="101" height="83" alt="Логотип города Седона.">
-        </div>
-
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="form.html">Форма отзыва</a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">HTML academy</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link  main-navigation__link--current">Фото и видео</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">HTML academy</a>
         </li>
       </ul>
-      <div class="page-header_menu-bar">
-        <button class="page-header__toggle-open" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
 
-      </div>
+      <button class="page-header__toggle-open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
     </nav>
 
   </header>
 
   <main class="main-container">
 
-    <div class="catalog-promo">
-      <div class="catalog-promo-container">
+    <div class="promo">
+      <div class="promo__container">
         <h1 class="visually-hidden">Туристический город "Седона"</h1>
-        <img class="catalog-promo_text-image" src="#" width="460" height="80" alt="Седона.">
+        <img class="promo__text-image" src="#" width="460" height="80" alt="Седона.">
       </div>
     </div>
   </main>
 
   <section class="photo-catalog">
-    <h2 class="photo-catalog catalog_title">Фото и видео</h2>
-    <p class="photo-catalog catalog_description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-      забыть о политике и экономике.</p>
+    <h2 class="photo-catalog__title">Фото и видео</h2>
+    <p class="photo-catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+      политике и экономике.</p>
 
-    <div class="photo-catalog-image_wrapper">
-      <a class="photo-catalog-image_link" href="#"></a>
-    </div>
-    <div class="catalog-image">
-      <img src="#" alt="Седона">
-    </div>
+    <ul class="photo-catalog__list list-reset">
 
-    <ul class="photo-catalog-container list-reset">
-      <li class="photo-catalog-item photo-catalog-item-road">
-        <h3 class="photo-catalog_title">Неродные просторы</h3>
-        <p class="photo-catalog-item-author">Автор фото: Борис</p>
-        <a class="button button-like" href="#"></a>
-      </li>
-      <div class="photo-catalog_likes">
-        <button class="likes_like-button" type="submit">
-        </button>
-        <span class="likes_count">1350</span>
-      </div>
+      <li class="photo-catalog-item photo-catalog-item__road">
+        <a class="photo-catalog__link" href="#"></a>
+        <img class="photo-catalog__image" src="#" alt="Неродные просторы">
 
-      <li class="photo-catalog-item catalog-item-plants">
-        <h3 class="photo-catalog_title">Местная растительность</h3>
-        <p class="photo-catalog-item-author">Автор фото: Сергей</p>
-        <a class="button button-like" href="#"></a>
+        <div class="photo-catalog__text">
+
+          <div class="photo-catalog__sign">
+            <h3 class="photo-catalog__title">Неродные просторы</h3>
+            <p class="photo-catalog__author">Автор фото: Борис</p>
+          </div>
+
+          <div class="photo-catalog__likes">
+            <button class="likes__like-button" type="submit">
+            </button>
+            <span class="likes__count">1350</span>
+          </div>
+
+        </div>
+
       </li>
-      <div class="photo-catalog_likes">
-        <button class="likes_like-button" type="submit">
-        </button>
-        <span class="likes_count">143</span>
-      </div>
-      <li class="photo-catalog-item catalog-item-north">
-        <h3 class="photo-catalog_title">Дорога на север</h3>
-        <p class="photo-catalog-item-author">Автор фото: Петр</p>
-        <a class="button button-like" href="#"></a>
+      <li class="photo-catalog-item photo-catalog-item__plants">
+        <a class="photo-catalog__link" href="#"></a>
+        <img class="photo-catalog__image" src="#" alt="Местная растительность">
+
+        <div class="photo-catalog__text">
+
+          <div class="photo-catalog__sign">
+            <h3 class="photo-catalog__title">Местная растительность</h3>
+            <p class="photo-catalog__author">Автор фото: Сергей</p>
+          </div>
+
+          <div class="photo-catalog__likes">
+            <button class="likes__like-button" type="submit">
+            </button>
+            <span class="likes__count">143</span>
+          </div>
+
+        </div>
+
       </li>
-      <div class="photo-catalog_likes">
-        <button class="likes_like-button" type="submit">
-        </button>
-        <span class="likes_count">96</span>
-      </div>
-      <li class="photo-catalog-item catalog-item-devil-bridge">
-        <h3 class="photo-catalog_title">Мост дьявола</h3>
-        <p class="photo-catalog-item-author">Автор фото: Антон</p>
-        <a class="button button-like" href="#"></a>
+
+      <li class="photo-catalog-item photo-catalog-item__north">
+        <a class="photo-catalog__link" href="#"></a>
+        <img class="photo-catalog__image" src="#" alt="Дорога на север">
+
+        <div class="photo-catalog__text">
+
+          <div class="photo-catalog__sign">
+            <h3 class="photo-catalog__title">Местная растительность</h3>
+            <p class="photo-catalog__author">Автор фото: Петр</p>
+          </div>
+
+          <div class="photo-catalog__likes">
+            <button class="likes__like-button" type="submit">
+            </button>
+            <span class="likes__count">96</span>
+          </div>
+
+        </div>
+
       </li>
-      <div class="photo-catalog_likes">
-        <button class="likes_like-button" type="submit">
-        </button>
-        <span class="likes_count">254</span>
-      </div>
+
+      <li class="photo-catalog-item photo-catalog-item__devil-bridge">
+        <a class="photo-catalog__link" href="#"></a>
+        <img class="photo-catalog__image" src="#" alt="Мост дьявола">
+
+        <div class="photo-catalog__text">
+
+          <div class="photo-catalog__sign">
+            <h3 class="photo-catalog__title">Мост дьявола</h3>
+            <p class="photo-catalog__author">Автор фото: Антон</p>
+          </div>
+
+          <div class="photo-catalog__likes">
+            <button class="likes__like-button" type="submit">
+            </button>
+            <span class="likes__count">254</span>
+          </div>
+
+        </div>
+
+      </li>
+
     </ul>
   </section>
 
