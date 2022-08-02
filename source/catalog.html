@@ -135,15 +135,22 @@
     <section class="video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-        раз!
-      </p>
+        раз!</p>
 
-      <div class="video-clip">
-        <div class="video-image">
-          <video src="#" alt="Video Sedona"></video>
-        </div>
+      <div class="video__image">
+        <img src="#" width="280" height="177" alt="Видеопрезентация.">
+        <button class="video__play" type="button">
+          <span class="visually-hidden">Play</span>
+        </button>
+      </div>
+      <div class="video__clip">
+        <video src="#" alt="Video Sedona" preload="none">
+          <source src="#" type="video/mp4">
+          <source src="#" type="video/webm">
+        </video>
       </div>
     </section>
+
   </main>
   <footer class="footer">
     <a href="#" class="footer__hashtag">#visitsedona</a>
@@ -167,8 +174,12 @@
       </li>
     </ul>
 
-    <a class="footer__copyright" href="#">Разработано</a>
-
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">Разработано</p>
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
 
   </footer>
 </body>
