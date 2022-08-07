@@ -1,1 +1,12 @@
-// Начните писать стили здесь
+@import "./global/variables.scss";
+
+@import "./global/mixins.scss";
+
+@import "./global/fonts.scss";
+
+@import "./global/global.scss";
+
+// Block
+@import "./blocks/main-navigation.scss";
+
+@import "./blocks/promo.scss";
