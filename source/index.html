@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,10 +14,10 @@
     <nav class="main-navigation">
 
       <div class="main-navigation__logo">
-        <img src="#" width="185" height="96" alt="Логотип города Седона.">
+        <img src="img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
       </div>
 
-      <ul class="main-navigation__list">
+      <ul class="main-navigation__list list-reset">
         <li class="main-navigation__item">
           <a class="main-navigation__link main-navigation__link--current">Главная</a>
         </li>
@@ -43,7 +44,7 @@
 
       <div class="promo__image">
         <h1 class="visually-hidden">Туристический город "Седона"</h1>
-        <img src="#" width="282" height="214" alt="Добро пожаловать в великолепную Седону, она лучше, чем Гранд-каньон!">
+        <img src="img/svg/text-promo.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, она лучше, чем Гранд-каньон!">
       </div>
 
       <div class="promo__container">
@@ -64,7 +65,7 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__img">
-              <img src="#" width="320" height="260" alt="Праздничный городок.">
+              <img src="img/advantages-mobile.jpg" width="320" height="260" alt="Праздничный городок.">
             </div>
           </div>
           <ul class="advantages__attractions list-reset">
@@ -90,7 +91,7 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__img">
-              <img src="#" width="320" height="260" alt="Мост Дьявола.">
+              <img src="img/advantages-second-mobile.jpg" width="320" height="260" alt="Мост Дьявола.">
             </div>
           </div>
         </li>
@@ -162,6 +163,26 @@
     </a>
 
   </footer>
+  <div class="modal-failure modal">
+    <div class="modal_wrapper">
+      <div class="modal_content">
+        <h2 class="modal_title">Что-то пошло не так!"</h2>
+        <p class="Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить"></p>
+      </div>
+      <button class="modal_button modal_button--failure button" type="button">ок</button>
+    </div>
+  </div>
+  <div class="modal-success modal">
+    <div class="modal_wrapper">
+      <div class="modal_content">
+        <h2 class="modal_title">Ваш отзыв отправлен!"</h2>
+        <p class="Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте."></p>
+      </div>
+      <div class="modal_button-wrapper">
+        <button class="modal_button button" type="button">ок</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
