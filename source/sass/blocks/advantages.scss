@@ -1,19 +1,12 @@
-.advantages__title {
-  margin-bottom: 49px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-
-  margin-block: 0;
-}
-
-.advantage_description {
-  margin: 0;
-}
-
-.advantages__list {
+.advantages__attractions {
   display: flex;
+  flex-direction: column;
+}
+
+.advantages__description {
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
 }
 
 .advantages__attractions-item {
@@ -34,30 +27,18 @@
 }
 
 .advantages__attractions-item--meal {
-  background-image: url("../img/svg/icon-menu.svg");
+  background-image: url("../img/svg/icon-burger.svg");
 }
 
 .advantages__attractions-item--souvenirs {
   background-image: url("../img/svg/icon-gift.svg");
 }
 
-@media (min-width: $tablet-width) .advantages__attractions-item {
-  margin-bottom: 0;
-  padding-top: 75px;
-  padding-left: 0;
-
-  background-position: center 0;
-  background-size: 76px 75px;
+.advantages__item--grey {
+  background-color: #eeeeee;
 }
 
-@media (min-width: $tablet-width) .advantages__list {
-  display: grid;
-
-  grid-template-areas:
-    "1 1 1"
-    "2 2 2"
-    "3 4 5";
-  grid-template-columns: repeat(3, 1fr);
-
-
+.advantages__number {
+  text-align: center;
 }
+

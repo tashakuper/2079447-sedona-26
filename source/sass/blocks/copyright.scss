@@ -8,11 +8,15 @@
   background-position: center;
 }
 
-.copyright-text {
+.footer__copyright-text {
+  align-items: center;
   width: 117px;
 
   font-weight: 400;
   font-size: 14px;
- 
- line-height: 21px;
+  line-height: 21px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-decoration: none;
 }
+

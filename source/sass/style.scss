@@ -19,11 +19,23 @@
 
 @import "./blocks/footer.scss";
 
-@import "./blocks/logo.scss";
+@import "./blocks/main-navigation__logo.scss";
 
-@import "./blocks/main.scss";
+@import "./blocks/map.scss";
 
-@import "./blocks/modal";
+@import "./blocks/modal.scss";
+
+@import "./blocks/photo-catalog.scss";
+
+@import "./blocks/advantages__container.scss";
+
+@import "./blocks/advantages.scss";
+
+@import "./blocks/search.scss";
+
+@import "./blocks/social.scss";
+
+@import "./blocks/video.scss";
 
 
-@import "./blocks/photo-catalog";
+@import "./blocks/form.scss";
