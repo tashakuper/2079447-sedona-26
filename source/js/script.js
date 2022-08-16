@@ -18,4 +18,3 @@ if (menuBtn) {
     menu.classList.toggle('main-navigation--open');
   })
 }
-

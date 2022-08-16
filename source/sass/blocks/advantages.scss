@@ -118,7 +118,7 @@
   font-weight: 700;
 }
 
-.advantages__container p+p {
+.advantages__container p + p {
   margin-top: 17px;
 
   @media (min-width: $tablet-width) {
