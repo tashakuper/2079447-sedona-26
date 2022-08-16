@@ -18,11 +18,18 @@
   margin: 0 auto;
 }
 
+.promo--page img {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 78px;
+  }
+}
+
 .promo__container {
-  width: 285px;
-  height: 149px;
-  padding-right: 18px;
-  padding-left: 17px;
+  padding: 16px 30px;
 
   text-align: center;
 }

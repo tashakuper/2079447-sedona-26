@@ -1,5 +1,4 @@
 .search {
-  max-width: 284px;
   padding: 38px 18px 49px;
 
   font-weight: 700;
@@ -9,6 +8,7 @@
 }
 
 .search__title {
+  font-size: 21px;
   line-height: 26px;
   color: $color-black;
 }
@@ -16,13 +16,22 @@
 .search__description {
   padding-bottom: 32px;
 
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 21px;
   color: #333333;
 }
 
-.search__button {
-  display: block;
+.search__description br {
+  display: none;
 
-  text-decoration: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.search__button {
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
 

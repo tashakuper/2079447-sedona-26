@@ -2,6 +2,10 @@
   text-transform: uppercase;
 }
 
+.video__image {
+  position: relative;
+}
+
 .video__play {
   position: absolute;
   top: 50%;
@@ -14,7 +18,7 @@
 
   background-color: transparent;
   border: 0;
-  transform: translate(-50%, -505%);
+  transform: translate(-50%, -50%);
 }
 
 .video__play::after {
@@ -28,5 +32,15 @@
 
   border: 27px solid transparent;
   border-left: 48px solid rgba(255, 255, 255, 0.7);
+}
+
+.video__clip {
+  display: none;
+}
+
+.video {
+  padding: 20px 28px;
+
+  text-align: center;
 }
 

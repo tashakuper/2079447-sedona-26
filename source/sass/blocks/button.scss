@@ -1,29 +1,17 @@
 .button {
-  width: 100%;
+  display: block;
   padding-top: 18px;
   padding-bottom: 14px;
 
-  font-style: 21px;
   font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
   font-family: "PT sans", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: $color-default;
   border: none;
 }
 
-.photo-catalog__button {
-  width: 23px;
-  height: 21px;
-  padding: 0;
-
-  background-color: transparent;
-  background-image: url("../img/svg/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 23px 21px;
- 
- border: none;
-}

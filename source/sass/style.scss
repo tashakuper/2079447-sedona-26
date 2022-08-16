@@ -9,25 +9,22 @@
 @import "./global/utils.scss";
 
 // Block
+@import "./blocks/header.scss";
+
 @import "./blocks/main-navigation.scss";
 
 @import "./blocks/promo.scss";
 
 @import "./blocks/button.scss";
 
-@import "./blocks/copyright.scss";
 
 @import "./blocks/footer.scss";
-
-@import "./blocks/main-navigation__logo.scss";
 
 @import "./blocks/map.scss";
 
 @import "./blocks/modal.scss";
 
 @import "./blocks/photo-catalog.scss";
-
-@import "./blocks/advantages__container.scss";
 
 @import "./blocks/advantages.scss";
 
@@ -36,6 +33,5 @@
 @import "./blocks/social.scss";
 
 @import "./blocks/video.scss";
-
 
 @import "./blocks/form.scss";
