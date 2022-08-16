@@ -1,0 +1,155 @@
+.main-navigation__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 10;
+
+  width: 23px;
+  height: 23px;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-navigation__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  display: none;
+
+  color: $color-white;
+
+  background-color: $color-default;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+  }
+}
+
+.main-navigation__list::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  height: 7px;
+
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-navigation__item {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+  }
+
+  &:nth-child(4n-2) {
+    @media (min-width: $tablet-width) {
+      margin-right: 76px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 120px;
+    }
+  }
+
+  &:nth-child(4n-1) {
+    @media (min-width: $tablet-width) {
+      margin-left: 76px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 120px;
+    }
+  }
+}
+
+.main-navigation__link {
+  display: block;
+  padding: 17px 0 12px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+
+.main-navigation__link--current {
+  color: #766357;
+}
+
+.main-navigation--open .main-navigation__toggle {
+  background-image: url("../img/svg/icon-cross.svg");
+}
+
+.main-navigation--open .main-navigation__list {
+  display: block;
+}
+
+.no-js .main-navigation__toggle {
+  display: none;
+}
+
+.no-js .main-navigation__list {
+  position: relative;
+
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}

@@ -1,0 +1,42 @@
+.video {
+  padding: 20px 28px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video__image {
+  position: relative;
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  width: 48px;
+  height: 54px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  transform: translate(-50%, -50%);
+}
+
+.video__play::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: block;
+
+  border: 27px solid transparent;
+  border-left: 48px solid rgba(255, 255, 255, 0.7);
+}
+
+.video__clip {
+  display: none;
+}

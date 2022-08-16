@@ -1,0 +1,48 @@
+.promo {
+  background-color: #ffffff;
+}
+
+.promo__image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-image: url("../img/banner-cover-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__image img {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+}
+
+.promo--page img {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 78px;
+  }
+}
+
+.promo__container {
+  padding: 16px 30px;
+
+  text-align: center;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  color: #333333;
+  text-transform: uppercase;
+}

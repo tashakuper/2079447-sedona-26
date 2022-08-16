@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT sans", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-default;
+  border: none;
+}

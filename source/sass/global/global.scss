@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $font-family;
+
+  background-color: #f2f2f2;
+}
+
+body {
+  display: grid;
+  min-width: 320px;
+  max-width: 1200px;
+  height: 100%;
+
+  background-color: #ffffff;
+
+  grid-template-rows: auto 1fr auto;
+}
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
