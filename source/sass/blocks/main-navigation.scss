@@ -126,6 +126,15 @@
     line-height: 21px;
     color: #000000;
   }
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .main-navigation__link--current {
@@ -134,6 +143,15 @@
 
 .main-navigation--open .main-navigation__toggle {
   background-image: url("../img/svg/icon-cross.svg");
+}
+
+.main-navigation__toggle:hover,
+:focus {
+  opacity: 0.5;
+}
+
+.main-navigation__toggle:active {
+  opacity: 0.3;
 }
 
 .main-navigation--open .main-navigation__list {
