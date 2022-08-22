@@ -1,14 +1,53 @@
 .promo {
   background-color: #ffffff;
+
+  &--page {
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .promo__image {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 90px;
+  padding-bottom: 85px;
 
-  background-image: url("../img/banner-cover-mobile.jpg");
+  background-color: #8ea8c5;
+  background-image: url("../img/svg/intro-triangle.svg"), url("../img//banner-cover-desktop.jpg");
   background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 92px;
+
+    background-size: 156%, cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center bottom -1px, bottom;
+    background-size: contain, cover;
+  }
+}
+
+.promo--page .promo__image {
+  padding-top: 52px;
+  padding-bottom: 67px;
+
+  background-size: cover, 282%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 117px;
+
+    background-size: 156%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 102px;
+    padding-bottom: 121px;
+
+    background-size: contain, cover;
+  }
 }
 
 .promo__image img {
@@ -29,17 +68,23 @@
 }
 
 .promo__container {
-  padding: 16px 30px;
+  padding: 22px 20px 13px;
 
   text-align: center;
 }
 
 .promo__title {
+  margin-bottom: 36px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
+}
+
+.promo--page .promo__title {
+  margin-bottom: 24px;
 }
 
 .promo__description {
