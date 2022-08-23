@@ -1,6 +1,10 @@
 .catalog__item {
   padding: 24px 20px 15px;
 
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   &:first-child {
     grid-column: 1/-1;
   }
@@ -118,5 +122,29 @@
 @media (min-width: $desktop-width) {
   .catalog__list:first-child {
     grid-column: 1/-1;
+  }
+}
+
+.catalog-text {
+  padding: 15px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 15px;
+
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    color: #ffffff;
+
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
