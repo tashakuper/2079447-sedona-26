@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 
@@ -16,7 +20,7 @@
     <nav class="main-navigation">
 
       <div class="main-navigation__logo">
-        <img src="img/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+        <img src="images/svg/logo.svg" width="185" height="96" alt="Логотип города Седона.">
       </div>
 
       <ul class="main-navigation__list list-reset">
@@ -46,11 +50,10 @@
 
       <div class="promo__image">
         <h1 class="visually-hidden">Туристический город "Седона"</h1>
-        <img src="img/svg/text-promo.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, она лучше, чем Гранд-каньон!">
+        <img src="images/svg/text-promo.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, она лучше, чем Гранд-каньон!">
       </div>
 
       <div class="promo__container">
-        <h2 class="visually-hidden">Преимущества</h2>
         <p class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий &nbsp;большего!</p>
         <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
@@ -67,7 +70,11 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__img">
-              <img src="img/advantages-mobile.jpg" width="320" height="260" alt="Праздничный городок.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/advantages-desktop.jpg, images/advantages-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="images/advantages-tablet.jpg, images/advantages-tablet@2x.jpg">
+                <img src="images/advantages-mobile.jpg" srcset="images/advantages-mobile@2x.jpg" width="320" height="260" alt="Праздничный городок.">
+              </picture>
             </div>
           </div>
           <ul class="advantages__attractions list-reset">
@@ -93,7 +100,11 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__img">
-              <img src="img/advantages-second-mobile.jpg" width="320" height="260" alt="Мост Дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/advantages-second-desktop.jpg, images/advantages-second-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="images/advantages-second-tablet.jpg, images/advantages-second-tablet@2x.jpg">
+                <img src="images/advantages-second-mobile.jpg" srcset="images/advantages-second-mobile@2x.jpg" width="320" height="260" alt="Мост Дьявола.">
+              </picture>
             </div>
           </div>
         </li>
