@@ -86,6 +86,29 @@
   }
 }
 
+.promo__container--form {
+  padding: 24px 20px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px;
+    padding-bottom: 30px;
+  }
+}
+
+.promo__container--form .promo__description {
+  @media (min-width: $tablet-width) {
+    padding-right: 166px;
+    padding-left: 167px;
+  }
+}
+
+.promo__container--form .promo__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
 .promo__title {
   margin-bottom: 30px;
 
