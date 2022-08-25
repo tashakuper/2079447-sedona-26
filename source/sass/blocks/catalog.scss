@@ -3,6 +3,10 @@
 
   padding: 24px 20px 15px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0;
   }
@@ -139,11 +143,11 @@
   padding: 15px 0 25px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-
     display: flex;
     justify-content: space-between;
     padding: 22px 20px 15px;
+
+    color: #ffffff;
 
     background-color: #f2f2f2;
   }
