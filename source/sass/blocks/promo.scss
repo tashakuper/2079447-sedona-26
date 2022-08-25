@@ -109,6 +109,13 @@
   }
 }
 
+.promo__container--catalog .promo__title {
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
 .promo__title {
   margin-bottom: 30px;
 
