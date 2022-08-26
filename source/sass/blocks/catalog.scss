@@ -1,7 +1,9 @@
 .catalog__item {
+  position: relative;
+
   padding: 24px 20px 15px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 
@@ -39,6 +41,10 @@
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog__author {
@@ -46,6 +52,10 @@
   line-height: 21px;
   color: #333333;
   text-transform: none;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog__button {
@@ -125,13 +135,15 @@
   }
 }
 
-.catalog-text {
+.catalog__text {
   padding: 15px 0 25px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 22px 20px 15px;
+
+    color: #ffffff;
 
     background-color: #f2f2f2;
   }
@@ -141,10 +153,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 10;
 
     color: #ffffff;
 
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
+

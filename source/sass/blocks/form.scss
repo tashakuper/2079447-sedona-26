@@ -103,7 +103,7 @@
 }
 
 .form__options-input:checked ~ .form__options-label--check::before {
-  background-image: url("../images/svg/icon-tick.svg");
+  background-image: url("../img/svg/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -153,7 +153,7 @@
 }
 
 .form__contact-label {
-  margin-left: 16px;
+  margin-left: 15px;
 
   text-align: left;
   text-transform: uppercase;
@@ -178,11 +178,11 @@
 }
 
 .form__contact-input--phone {
-  background-image: url("../images/svg/phone.svg");
+  background-image: url("../img/svg/phone.svg");
 }
 
 .form__contact-input--mail {
-  background-image: url("../images/svg/mail.svg");
+  background-image: url("../img/svg/mail.svg");
 }
 
 .form__fieldset--contact .form__contact-input {
@@ -196,7 +196,7 @@
 .form__feedback {
   width: 100%;
   height: 150px;
-  margin-bottom: 56px;
+  // margin-bottom: 56px;
   padding: 16px;
 
   font-weight: 700;
@@ -262,3 +262,16 @@
     margin-right: -100%;
   }
 }
+
+.form__fieldset--feedback {
+  padding-bottom: 8px;
+}
+
+.form__fieldset--attractions {
+  padding-bottom: 8px;
+}
+
+// .footer__form {
+//   padding: 2px 20px 22px;
+// } не получается по пиксель перфект выровнять
+

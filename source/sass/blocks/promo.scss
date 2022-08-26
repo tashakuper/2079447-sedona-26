@@ -11,7 +11,7 @@
   padding-bottom: 85px;
 
   background-color: #8ea8c5;
-  background-image: url("../images/svg/intro-triangle.svg"), url("../images/banner-cover-desktop.jpg");
+  background-image: url("../img/svg/intro-triangle.svg"), url("../img/banner-cover-desktop.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -55,6 +55,11 @@
   width: 282px;
   height: 214px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 349px;
+  }
 }
 
 .promo--page img {
@@ -68,19 +73,63 @@
 }
 
 .promo__container {
-  padding: 15px 24px 13px;
+  padding: 16px 24px 13px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 124px 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 359px 6px 357px;
+  }
+}
+
+.promo__container--form {
+  padding: 24px 20px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px;
+    padding-bottom: 30px;
+  }
+}
+
+.promo__container--form .promo__description {
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.promo__container--form .promo__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.promo__container--catalog .promo__title {
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .promo__title {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .promo--page .promo__title {
@@ -90,4 +139,9 @@
 .promo__description {
   color: #333333;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
 }
+

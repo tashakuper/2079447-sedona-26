@@ -43,7 +43,7 @@
 }
 
 .advantages__item--full:first-child .advantages__container {
-  padding-top: 52px;
+  padding-top: 44px;
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
@@ -64,7 +64,7 @@
 
   height: 37px;
 
-  background-image: url("../images/svg/advantages-triangle.svg");
+  background-image: url("../img/svg/advantages-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -193,12 +193,12 @@
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 }
 
 .advantages__attractions-item--motel {
-  background-image: url("../images/svg/icon-house.svg");
+  background-image: url("../img/svg/icon-house.svg");
   background-position: 18px 25px;
   background-size: 40px 37px;
 
@@ -215,7 +215,7 @@
 .advantages__attractions-item--meal {
   padding-left: 70px;
 
-  background-image: url("../images/svg/icon-burger.svg");
+  background-image: url("../img/svg/icon-burger.svg");
   background-position: 18px 25px;
   background-size: 40px 35px;
 
@@ -234,7 +234,7 @@
 .advantages__attractions-item--souvenirs {
   padding-left: 62px;
 
-  background-image: url("../images/svg/icon-gift.svg");
+  background-image: url("../img/svg/icon-gift.svg");
   background-position: 22px 21px;
   background-size: 32px 39px;
 
@@ -283,3 +283,4 @@
 .advantages__item:last-child::after {
   display: none;
 }
+
