@@ -103,7 +103,7 @@
 }
 
 .form__options-input:checked ~ .form__options-label--check::before {
-  background-image: url("../images/svg/icon-tick.svg");
+  background-image: url("../img/svg/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -178,11 +178,11 @@
 }
 
 .form__contact-input--phone {
-  background-image: url("../images/svg/phone.svg");
+  background-image: url("../img/svg/phone.svg");
 }
 
 .form__contact-input--mail {
-  background-image: url("../images/svg/mail.svg");
+  background-image: url("../img/svg/mail.svg");
 }
 
 .form__fieldset--contact .form__contact-input {
@@ -274,3 +274,4 @@
 // .footer__form {
 //   padding: 2px 20px 22px;
 // } не получается по пиксель перфект выровнять
+

@@ -11,7 +11,7 @@
   padding-bottom: 85px;
 
   background-color: #8ea8c5;
-  background-image: url("../images/svg/intro-triangle.svg"), url("../images/banner-cover-desktop.jpg");
+  background-image: url("../img/svg/intro-triangle.svg"), url("../img/banner-cover-desktop.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -97,8 +97,9 @@
 
 .promo__container--form .promo__description {
   @media (min-width: $tablet-width) {
-    padding-right: 166px;
-    padding-left: 167px;
+    max-width: 435px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -143,3 +144,4 @@
     padding-bottom: 20px;
   }
 }
+
