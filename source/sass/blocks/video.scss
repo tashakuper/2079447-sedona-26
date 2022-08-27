@@ -7,6 +7,26 @@
 
 .video__image {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.video__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .video__play {
@@ -39,4 +59,19 @@
 
 .video__clip {
   display: none;
+}
+
+.video__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+}
+
+.video__description {
+  @media (min-width: $desktop-width) {
+    max-width: 445px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 75px;
+  }
 }
