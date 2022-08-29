@@ -8,7 +8,6 @@
   }
 }
 
-// +
 .form__wrapper-fieldset {
   @media (min-width: $tablet-width) {
     position: relative;
@@ -16,6 +15,10 @@
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 41px;
   }
 
   &::before {
@@ -38,21 +41,18 @@
   }
 }
 
-// +
 .form__wrapper-fieldset .form__fieldset-title {
   @media (min-width:$desktop-width) {
     padding-left: 12px;
   }
 }
 
-// +
 .form__wrapper-fieldset .form__fieldset {
   @media (min-width:$tablet-width) {
     padding-top: 20px;
   }
 }
 
-// +
 .form__fieldset {
   position: relative;
 
@@ -63,13 +63,16 @@
   border-bottom: 1px solid #d6d6d6;
 
   @media (min-width:$tablet-width) {
-    padding: 45px 0 0;
+    padding: 43px 0 0;
 
     border: none;
   }
+
+  @media (min-width:$tablet-width) {
+    padding-top: 11px;
+  }
 }
 
-// +
 .form__fieldset--data .form__contact-list {
   @media (min-width: $tablet-width) {
     padding-right: 44px;
@@ -80,7 +83,6 @@
   }
 }
 
-// +
 .form__fieldset--contact {
   padding-bottom: 17px;
 
@@ -89,7 +91,6 @@
   }
 }
 
-// +
 .form__fieldset--contact .form__contact-list {
   @media (min-width: $tablet-width) {
     padding-left: 44px;
@@ -100,7 +101,6 @@
   }
 }
 
-// +
 .form__contact-item {
   margin-bottom: 17px;
 
@@ -111,7 +111,7 @@
 
 .form__fieldset-title {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 18px;
@@ -120,6 +120,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+
     font-size: 21px;
   }
 }
@@ -134,7 +136,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 54px;
+    padding: 20px 54px;
 
     gap: 16px 62px;
     grid-template-columns: repeat(3, auto);
@@ -291,8 +293,7 @@
 .form__feedback {
   width: 100%;
   height: 150px;
-  // margin-bottom: 56px;
-  padding: 16px;
+  padding: 12px;
 
   font-weight: 700;
   font-size: 18px;
@@ -304,6 +305,12 @@
   border: 4px solid transparent;
 
   resize: none;
+
+  // @media (min-width: $desktop-width) {
+  //   max-width: 768px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 }
 
 .form__note {
@@ -359,13 +366,31 @@
 }
 
 .form__fieldset--feedback {
-  padding-bottom: 8px;
+  padding-bottom: 24px;
 }
 
 .form__fieldset--attractions {
-  padding-bottom: 8px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+  }
 }
 
-// .footer__form {
-//   padding: 2px 20px 22px;
-// } не получается по пиксель перфект выровнять
+.form__fieldset .button {
+  max-width: 281px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 324px;
+    margin-top: 43px;
+  }
+}

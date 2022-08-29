@@ -104,27 +104,38 @@
   padding: 24px 20px 13px;
 
   @media (min-width: $tablet-width) {
-    padding: 37px;
+    padding: 41px 15px 15px;
     padding-bottom: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 34px 15px 25px;
+  }
+
 }
 
 .promo__container--form .promo__description {
+  margin-bottom: 11px;
+
   @media (min-width: $tablet-width) {
     max-width: 435px;
     margin-right: auto;
+    margin-bottom: -8px;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 458px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 33px;
+    padding-top: 0;
+    padding-bottom: 22px;
   }
 }
 
 .promo__container--form .promo__title {
   @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
     font-size: 30px;
     line-height: 26px;
   }
@@ -167,7 +178,7 @@
   margin-bottom: 24px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 31px;
+    margin-top: 75px;
   }
 }
 
