@@ -55,7 +55,7 @@
         <img src="img/svg/text-promo.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, она лучше, чем Гранд-каньон!">
       </div>
 
-      <div class="promo__container">
+      <div class="promo__container promo__container--main">
         <p class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий &nbsp;большего!</p>
         <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
@@ -107,6 +107,9 @@
             </div>
             <div class="advantages__img">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantages-second-desktop.webp, img/advantages-second-desktop@2x.webp">
+                <source media="(min-width: 768px)" srcset="img/advantages-second-tablet.webp, img/advantages-second-tablet@2x.webp">
+                <source srcset="img/advantages-second-mobile.webp, img/advantages-second-mobile@2x.webp">
                 <source media="(min-width: 1200px)" srcset="img/advantages-second-desktop.jpg, img/advantages-second-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/advantages-second-tablet.jpg, img/advantages-second-tablet@2x.jpg">
                 <img src="img/advantages-second-mobile.jpg" srcset="img/advantages-second-mobile@2x.jpg" width="320" height="260" alt="Мост Дьявола.">
@@ -155,7 +158,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--main">
     <a href="#" class="footer__hashtag">#visitsedona</a>
 
     <ul class="social list-reset">

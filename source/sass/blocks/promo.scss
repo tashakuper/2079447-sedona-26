@@ -90,6 +90,16 @@
   }
 }
 
+.promo__container--main {
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+  }
+}
+
 .promo__container--form {
   padding: 24px 20px 13px;
 
@@ -137,7 +147,7 @@
 }
 
 .promo__title {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   font-weight: 700;
   font-size: 18px;
@@ -146,6 +156,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+
     font-size: 21px;
     line-height: 26px;
   }
@@ -156,11 +168,13 @@
 }
 
 .promo__description {
+  margin-bottom: 4px;
+
   color: #333333;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 20px;
+    padding-bottom: 36px;
   }
 }
 
@@ -177,6 +191,12 @@
     margin-right: auto;
     margin-left: auto;
     padding: 7px;
+  }
+}
+
+.promo__container--main .promo__description {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
   }
 }
 
