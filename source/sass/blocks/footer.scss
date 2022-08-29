@@ -17,8 +17,16 @@
 }
 
 .footer--page {
+  padding-top: 10px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 29px;
+  }
+}
+
+.footer--page .social {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
   }
 }
 

@@ -165,6 +165,10 @@
 
 .promo--page .promo__title {
   margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+  }
 }
 
 .promo__description {
@@ -179,9 +183,12 @@
 }
 
 .promo__container--catalog .promo__description {
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     max-width: 458px;
     margin-right: auto;
+    margin-bottom: 14px;
     margin-left: auto;
     padding: 7px;
   }
@@ -201,6 +208,12 @@
 }
 
 .promo__container--catalog {
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 65px;
   }
