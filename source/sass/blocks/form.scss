@@ -43,13 +43,13 @@
 }
 
 .form__wrapper-fieldset .form__fieldset-title {
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 12px;
   }
 }
 
 .form__wrapper-fieldset .form__fieldset {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 20px;
   }
 }
@@ -63,13 +63,13 @@
   border: none;
   border-bottom: 1px solid #d6d6d6;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 43px 0 0;
 
     border: none;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 11px;
   }
 }
@@ -142,7 +142,6 @@
     gap: 16px 62px;
     grid-template-columns: repeat(3, auto);
   }
-
 }
 
 .form__fieldset--attractions .form__options {
