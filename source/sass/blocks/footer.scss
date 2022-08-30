@@ -46,6 +46,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .footer--main .footer__copyright-text {
@@ -106,8 +110,18 @@
   height: 34px;
 
   fill: currentColor;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .footer__copyright-text {
   margin-right: 15px;
+}
+
+.footer--form {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }

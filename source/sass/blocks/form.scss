@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 41px;
+    margin-bottom: 8px;
   }
 
   &::before {
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 11px;
+    padding-top: 11px 0 0;
   }
 }
 
@@ -307,14 +307,14 @@
   resize: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 7px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   max-width: 768px;
-  //   margin-right: auto;
-  //   margin-left: auto;
-  // }
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .form__note {
@@ -323,6 +323,12 @@
   text-align: right;
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+
+    font-size: 12px;
+  }
 }
 
 .form__fieldset-title--lines {
@@ -371,31 +377,55 @@
 
 .form__fieldset--feedback {
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
+  }
 }
 
 .form__fieldset--attractions {
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
+    margin-bottom: -3px;
     padding-top: 24px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 42px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
   }
 }
 
-.form__fieldset .button {
-  max-width: 281px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 324px;
-  }
+.form__fieldset--submit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding-top: 43px;
 
   @media (min-width: $desktop-width) {
-    max-width: 324px;
-    margin-top: 43px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 54px;
+  }
+}
+
+.form__submit.button {
+  width: 384px;
+  margin-bottom: 33px;
+  margin-left: -19px;
+  padding-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-left: 0;
   }
 }
