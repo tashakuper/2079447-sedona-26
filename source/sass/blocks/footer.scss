@@ -1,5 +1,5 @@
 .footer {
-  padding: 38px 20px 22px;
+  padding: 39px 20px 22px;
 
   text-align: center;
   text-transform: uppercase;
@@ -13,6 +13,44 @@
 
   @media (min-width: $desktop-width) {
     padding: 45px 120px 34px;
+  }
+}
+
+.footer--page {
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+  }
+}
+
+.footer--form {
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
+  }
+}
+
+.footer--page .social {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+}
+
+.footer--main {
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
+  }
+}
+
+.footer--main .footer__hashtag {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+}
+
+.footer--main .footer__copyright-text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
   }
 }
 
@@ -65,11 +103,11 @@
 
 .footer__copyright svg {
   width: 27px;
-  height: 35px;
+  height: 34px;
 
   fill: currentColor;
 }
 
 .footer__copyright-text {
-  margin-right: 12px;
+  margin-right: 15px;
 }

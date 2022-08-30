@@ -1,5 +1,5 @@
 .search {
-  padding: 26px 18px 49px;
+  padding: 23px 18px 49px;
 
   font-weight: 700;
   font-size: 21px;
@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 35px;
     padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
   }
 }
 
@@ -25,12 +29,21 @@
 }
 
 .search__description {
-  padding-bottom: 21px;
+  padding-top: 2px;
+  padding-bottom: 18px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
+  }
 }
 
 .search__description br {
@@ -45,5 +58,10 @@
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
   }
 }

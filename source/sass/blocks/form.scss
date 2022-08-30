@@ -1,10 +1,25 @@
+.form {
+  @media (min-width: $tablet-width) {
+    padding: 24px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 120px;
+  }
+}
+
 .form__wrapper-fieldset {
   @media (min-width: $tablet-width) {
     position: relative;
 
     display: grid;
+    margin-bottom: 33px;
 
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 41px;
   }
 
   &::before {
@@ -27,23 +42,122 @@
   }
 }
 
+.form__wrapper-fieldset .form__fieldset-title {
+  @media (min-width:$desktop-width) {
+    padding-left: 12px;
+  }
+}
+
+.form__wrapper-fieldset .form__fieldset {
+  @media (min-width:$tablet-width) {
+    padding-top: 20px;
+  }
+}
+
 .form__fieldset {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  // margin-bottom: 16px;
-  padding: 24px 20px 40px;
+  position: relative;
+
+  margin: 0;
+  padding: 24px 20px 21px;
 
   border: none;
   border-bottom: 1px solid #d6d6d6;
 
+  @media (min-width:$tablet-width) {
+    padding: 43px 0 0;
+
+    border: none;
+  }
+
+  @media (min-width:$tablet-width) {
+    padding-top: 11px;
+  }
+}
+
+.form__fieldset--data .form__contact-list {
   @media (min-width: $tablet-width) {
-    border-bottom: 0;
+    padding-right: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
   }
 }
 
 .form__fieldset--contact {
-  padding-bottom: 33px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.form__fieldset--contact .form__contact-list {
+  @media (min-width: $tablet-width) {
+    padding-left: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 77px;
+  }
+}
+
+.form__contact-item {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.form__fieldset-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+
+    font-size: 21px;
+  }
+}
+
+.form__options {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 0 36px;
+
+    gap: 16px 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 54px;
+
+    gap: 16px 62px;
+    grid-template-columns: repeat(3, auto);
+  }
+
+}
+
+.form__fieldset--attractions .form__options {
+  @media (min-width: $tablet-width) {
+    padding: 0 84px;
+
+    gap: 16px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 45px;
+
+    gap: 16px 62px;
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 .form__options-item {
@@ -56,6 +170,14 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__options-label {
@@ -128,30 +250,6 @@
   opacity: 0.6;
 }
 
-.form__options {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    padding: 0 60px 63px 60px;
-
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.form__fieldset-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.form__contact-item:not(:last-child) {
-  margin-bottom: 16px;
-}
-
 .form__contact-label {
   margin-left: 15px;
 
@@ -196,8 +294,7 @@
 .form__feedback {
   width: 100%;
   height: 150px;
-  // margin-bottom: 56px;
-  padding: 16px;
+  padding: 12px;
 
   font-weight: 700;
   font-size: 18px;
@@ -209,6 +306,16 @@
   border: 4px solid transparent;
 
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   max-width: 768px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 }
 
 .form__note {
@@ -264,14 +371,32 @@
 }
 
 .form__fieldset--feedback {
-  padding-bottom: 8px;
+  padding-bottom: 24px;
 }
 
 .form__fieldset--attractions {
-  padding-bottom: 8px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+  }
 }
 
-// .footer__form {
-//   padding: 2px 20px 22px;
-// } не получается по пиксель перфект выровнять
+.form__fieldset .button {
+  max-width: 281px;
 
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 324px;
+    margin-top: 43px;
+  }
+}
