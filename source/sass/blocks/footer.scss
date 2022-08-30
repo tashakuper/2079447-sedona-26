@@ -25,6 +25,10 @@
 }
 
 .footer--form {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 39px;
   }
@@ -118,10 +122,4 @@
 
 .footer__copyright-text {
   margin-right: 15px;
-}
-
-.footer--form {
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-  }
 }
