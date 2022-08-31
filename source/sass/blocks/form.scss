@@ -318,6 +318,8 @@
 }
 
 .form__note {
+  display: block;
+
   font-size: 12px;
   line-height: 21px;
   text-align: right;
@@ -403,29 +405,38 @@
 }
 
 .form__fieldset--submit {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 24px;
-  padding-top: 43px;
+  padding-bottom: 14px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 54px;
+    margin-bottom: 24px;
+    padding-top: 43px;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 54px;
+    }
   }
 }
 
 .form__submit.button {
-  width: 384px;
-  margin-bottom: 33px;
-  margin-left: -19px;
-  padding-right: 19px;
+  width: 284px;
+  margin: 0 auto;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     margin-left: 0;
+
+    @media (min-width: $desktop-width) {
+      width: 384px;
+      margin-bottom: 33px;
+      margin-left: -19px;
+      padding-right: 19px;
+    }
   }
 }
