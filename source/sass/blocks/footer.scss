@@ -24,19 +24,19 @@
   }
 }
 
+.footer--page .social {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+}
+
 .footer--form {
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 39px;
-  }
-}
-
-.footer--page .social {
-  @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 13px;
   }
 }
 
