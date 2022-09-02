@@ -18,3 +18,17 @@ if (menuBtn) {
     menu.classList.toggle('main-navigation--open');
   })
 }
+
+
+async function supportWEBP() {
+  const WEBP = new Image();
+  await (WEBP.onload = WEBP.onerror = function () {
+    if (WEBP.height == 2) {
+      window.detectWebp = true;
+      document.body.classList.add('webp')
+      return true
+    }
+  })
+  await (WEBP.src = 'data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAABQAQCdASoDAAIAAgA2JQBOgC6gAP73M8eLuxHGTv3eIAAA');
+};
+supportWEBP();
