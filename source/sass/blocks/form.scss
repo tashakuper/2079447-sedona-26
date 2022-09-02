@@ -231,11 +231,11 @@
   transform: translateY(-50%);
 }
 
-.form__options-input:checked~.form__options-label--radio::after {
+.form__options-input:checked ~ .form__options-label--radio::after {
   display: block;
 }
 
-.form__options-input:checked~.form__options-label--check::before {
+.form__options-input:checked ~ .form__options-label--check::before {
   background-image: url("../img/svg/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -253,11 +253,11 @@
   background-color: rgba(51, 51, 51, 0.3);
 }
 
-.form__options-input:disabled~.form__options-label::before {
+.form__options-input:disabled ~ .form__options-label::before {
   opacity: 0.6;
 }
 
-.form__options-input:disabled~.form__options-label::after {
+.form__options-input:disabled ~ .form__options-label::after {
   opacity: 0.6;
 }
 
@@ -342,10 +342,6 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-right: 98px;
-  // }
 }
 
 .form__fieldset-title--lines {
