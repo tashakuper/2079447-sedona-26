@@ -3,6 +3,10 @@
   justify-content: center;
   max-width: 300px;
   padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .social__item:not(:last-child) {
