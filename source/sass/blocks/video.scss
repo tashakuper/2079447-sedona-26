@@ -42,9 +42,22 @@
   background-size: cover;
   border: 0;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     top: 46%;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline-offset: 5px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

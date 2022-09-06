@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   max-width: 300px;
   padding-bottom: 39px;
@@ -9,8 +10,12 @@
   }
 }
 
-.social__item:not(:last-child) {
-  margin-right: 6px;
+.social__item {
+  margin: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {

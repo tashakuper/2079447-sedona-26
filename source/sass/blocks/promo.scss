@@ -21,9 +21,19 @@
   background-position: bottom;
   background-size: cover;
 
+  @media (min-resolution: $retina) {
+    background-image: url("../img/svg/intro-triangle.svg"),
+      url("../img/banner-cover-desktop@2x.jpg");
+  }
+
   @supports (background-image: url("../img/banner-cover-desktop.webp")) {
     background-image: url("../img/svg/intro-triangle.svg"),
       url("../img/banner-cover-desktop.webp");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/svg/intro-triangle.svg"),
+        url("../img/banner-cover-desktop@2x.webp");
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -107,7 +117,7 @@
 }
 
 .promo__container--catalog {
-  padding: 19px 23px 16px;
+  padding: 19px 20px 16px;
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;
