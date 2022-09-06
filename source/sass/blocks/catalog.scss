@@ -45,6 +45,8 @@
   display: block;
   height: 280px;
 
+  background-color: #df9a7a;
+
   @media (min-width: $tablet-width) {
     height: 267px;
   }
@@ -69,6 +71,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 22px 20px 15px;
 
     color: #ffffff;
@@ -153,13 +156,23 @@
   grid-template-columns: auto auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 6px;
-
     gap: 9px;
   }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline-offset: 5px;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 

@@ -231,17 +231,28 @@
   transform: translateY(-50%);
 }
 
-.form__options-input:checked ~ .form__options-label--radio::after {
-  display: block;
-}
+.form__options-label--check::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
 
-.form__options-input:checked ~ .form__options-label--check::before {
+  display: none;
+  width: 22px;
+  height: 16px;
+
   background-image: url("../img/svg/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transform: translateY(-50%);
 }
 
-.form__options-label:hover::before {
+.form__options-input:checked ~ .form__options-label::after {
+  display: block;
+}
+
+.form__options-label:hover::before,
+.form__options-input:focus ~ .form__options-label::before {
   background-color: #e5e5e5;
 }
 
@@ -249,16 +260,12 @@
   background-color: #d5d5d5;
 }
 
-.form__options-label--radio:active::after {
-  background-color: rgba(51, 51, 51, 0.3);
+.form__options-label:active::after {
+  opacity: 0.3;
 }
 
-.form__options-input:disabled ~ .form__options-label::before {
-  opacity: 0.6;
-}
-
-.form__options-input:disabled ~ .form__options-label::after {
-  opacity: 0.6;
+.form__options-input:disabled ~ .form__options-label {
+  opacity: 0.3;
 }
 
 .form__contact-label {
@@ -284,6 +291,18 @@
   background-position: right -4px center;
   background-size: 58px 58px;
   border: 4px solid transparent;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(229, 229, 229, 1);
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0);
+
+    border: 4px solid #e5e5e5;
+  }
 }
 
 .form__contact-input--phone {
@@ -310,7 +329,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  font-family: "PT Sans", sans-serif;
+  font-family: $font-family;
   color: #000000;
 
   background-color: #f2f2f2;
@@ -342,10 +361,6 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-right: 98px;
-  // }
 }
 
 .form__fieldset-title--lines {
@@ -419,6 +434,7 @@
 }
 
 .form__fieldset--submit {
+  padding-top: 30px;
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
