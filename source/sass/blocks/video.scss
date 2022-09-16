@@ -29,7 +29,7 @@
 .video__play {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 53%;
   z-index: 1;
 
   width: 48px;
@@ -43,6 +43,10 @@
   border: 0;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+  }
 
   @media (min-width: $desktop-width) {
     top: 46%;

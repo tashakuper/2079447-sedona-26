@@ -38,7 +38,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    display: no;
+    display: none;
   }
 }
 
@@ -89,13 +89,9 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
-    width: 153px;
+    width: 20%;
 
     box-shadow: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 239px;
   }
 
   &:nth-child(4n-2) {
