@@ -45,3 +45,9 @@
     background-color: #5496bd;
   }
 }
+
+.footer--form .social {
+  @media (min-width: $tablet-width) {
+    margin-left: -4px;
+  }
+}
