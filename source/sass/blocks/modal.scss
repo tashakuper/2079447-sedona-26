@@ -65,7 +65,7 @@
 }
 
 .modal__container-error .modal__wrapper-text {
-  padding: 45px 42px 7px 41px;
+  padding: 28px 42px 5px 41px;
 
   @media (min-width: $tablet-width) {
     padding: 31px 47px 0 46px;
@@ -191,6 +191,7 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    padding-top: 42px;
     padding-bottom: 49px;
   }
 }
